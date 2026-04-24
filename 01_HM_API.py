@@ -5,8 +5,8 @@ from datetime import datetime
 from Bio import SeqIO
 
 # Configuracion
-API_TOKEN = "c04c035a5b3d79953dc075bfcb88426a50409a47"
-CARPETAS = ["G2019S", "I2020T"]
+API_TOKEN = "USR API TOKEN"
+CARPETAS = ["Dir1", "Dir2"]
 POST_URL = "https://swissmodel.expasy.org/user_template"
 HEADERS = {"Authorization": f"Token {API_TOKEN}"}
 
@@ -111,7 +111,7 @@ def ejecutar_flujo():
             print(f"{p['carpeta']:<10} | {p['archivo']:<15} | {p['estado']:<15}")
         
         if procesos_activos:
-            print("\nEsperando 5 minutos para la siguiente actualizacion...")
+            print("\nEsperando 2 minutos para la siguiente actualizacion...")
             time.sleep(120)
 
     print("\nProceso finalizado. Puedes revisar las carpetas.")
